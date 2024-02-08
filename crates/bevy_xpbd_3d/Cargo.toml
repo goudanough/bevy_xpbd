@@ -40,8 +40,8 @@ required-features = ["3d"]
 
 [dependencies]
 bevy_xpbd_derive = { path = "../bevy_xpbd_derive", version = "0.1" }
-bevy = { git = "https://github.com/bevyengine/bevy.git", default-features = false }
-bevy_math = { git = "https://github.com/bevyengine/bevy.git" }
+bevy = { git = "https://github.com/bevyengine/bevy", rev = "d4132f661a8a567fd3f9c3b329c2b4032bb1e05e", default-features = false }
+bevy_math = { git = "https://github.com/bevyengine/bevy", rev = "d4132f661a8a567fd3f9c3b329c2b4032bb1e05e" }
 parry3d = { git = "https://github.com/Jondolf/parry.git", branch = "update-nalgebra", optional = true }
 parry3d-f64 = { git = "https://github.com/Jondolf/parry.git", branch = "update-nalgebra", optional = true }
 nalgebra = { git = "https://github.com/Jondolf/nalgebra.git", features = [
@@ -56,7 +56,7 @@ itertools = "0.12"
 [dev-dependencies]
 examples_common_3d = { path = "../examples_common_3d" }
 benches_common_3d = { path = "../benches_common_3d" }
-bevy_math = { git = "https://github.com/bevyengine/bevy.git", features = [
+bevy_math = { git = "https://github.com/bevyengine/bevy", rev = "d4132f661a8a567fd3f9c3b329c2b4032bb1e05e", features = [
     "approx",
 ] }
 approx = "0.5"
